@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="439.0" prefWidth="607.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controleur.AuthentificationController">
+   <children>
+      <Pane layoutX="84.0" layoutY="48.0" prefHeight="356.0" prefWidth="477.0" style="-fx-background-color: #546E7A;" AnchorPane.bottomAnchor="35.0" AnchorPane.leftAnchor="84.0" AnchorPane.rightAnchor="46.0" AnchorPane.topAnchor="48.0">
+         <children>
+            <PasswordField fx:id="motdepasse" layoutX="169.0" layoutY="241.0" prefHeight="42.0" prefWidth="205.0" promptText="mot de passe" visible="false">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </PasswordField>
+            <TextField fx:id="identifiant" layoutX="176.0" layoutY="111.0" prefHeight="42.0" prefWidth="205.0" promptText="identifiant">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TextField>
+            <ImageView fx:id="imageidentifiant" fitHeight="60.0" fitWidth="41.0" layoutX="112.0" layoutY="113.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/utilisateur.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="immotpass" fitHeight="49.0" fitWidth="53.0" layoutX="104.0" layoutY="238.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@../image/cle.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="entrerid" layoutX="176.0" layoutY="39.0" prefHeight="41.0" prefWidth="238.0" text="Entrer votre identifiant !">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="vraie" fitHeight="30.0" fitWidth="69.0" layoutX="390.0" layoutY="118.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@../image/vraie.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="incorrecte1" layoutX="176.0" layoutY="71.0" prefHeight="41.0" prefWidth="238.0" text="Saisie incorrecte" textFill="#d70e0e" visible="false">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="entrermotdepass" layoutX="176.0" layoutY="178.0" prefHeight="15.0" prefWidth="238.0" text="Entrer votre mot de pass !" visible="false">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="incorrete2" layoutX="180.0" layoutY="207.0" prefHeight="41.0" prefWidth="230.0" text="Saisie incorrecte" textFill="#d70e0e" visible="false">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="reussit" layoutX="153.0" layoutY="300.0" prefHeight="15.0" prefWidth="238.0" text="Authentification reussit " textFill="#2ee10f" visible="false">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
